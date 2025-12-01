@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Simple To-Do List</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="header">To-Do List App</h1>
+      <div class="task-container">
+        <input
+          type="text"
+          name="input_task_field"
+          class="input-add-task"
+          placeholder="Add a new task"
+          required
+        />
+        <button class="btn btn--add">Add</button>
+      </div>
+
+      <ul class="list-container">
+        <li class="list__item hidden">
+          <input type="text" class="list__input" />
+          <button class="btn btn--delete">Delete</button>
+        </li>
+      </ul>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
