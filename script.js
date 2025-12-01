@@ -1,4 +1,5 @@
 const addBtn = document.querySelector('.btn--add');
+const clearAllBtn = document.querySelector('.clear-all');
 const inputAddTask = document.querySelector('.input-add-task');
 const listContainer = document.querySelector('.list-container');
 
@@ -42,4 +43,11 @@ listContainer.addEventListener('click', function (e) {
 
 inputAddTask.addEventListener('keydown', function (e) {
   if (e.key === 'Enter') addTask();
+});
+
+clearAllBtn.addEventListener('click', function () {
+  const listContainerItems = document.querySelectorAll('.list__item');
+  listContainerItems.forEach(el => {
+    el.remove();
+  });
 });

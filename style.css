@@ -107,6 +107,13 @@ body {
   caret-color: var(--color-primary-3);
 }
 
+.controls {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
 .hidden {
   display: none;
 }
